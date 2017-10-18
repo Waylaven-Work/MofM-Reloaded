@@ -1,7 +1,9 @@
 /// @description Move State
 
-var x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
-var y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+//var x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
+//var y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+var x_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var y_input = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 image_speed = 0;
 var input_dir = point_direction(0, 0, x_input, y_input);
 var attack_input = keyboard_check_pressed(vk_space);
