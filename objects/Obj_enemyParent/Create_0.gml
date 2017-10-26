@@ -2,10 +2,16 @@
 event_inherited();
 initialize_movement_entity(1, 0.5, Obj_solid);
 
-starting_state_ = noone;
-state_ = starting_state_;	
-
 enum enemy
 {
-	hit
+	hit,
+	idle, 
+	move, 
+	attack, 
+	wait
 }
+
+starting_state = enemy.idle;
+state_ = starting_state;
+
+alarm[0] = random_range(0, 1) * game_get_speed(gamespeed_fps);

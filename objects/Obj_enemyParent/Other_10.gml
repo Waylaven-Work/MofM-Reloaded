@@ -7,5 +7,5 @@ apply_friction_to_movement_entity();
 if (speed_ = 0)
 {
 	starting_state_ = noone;
-	state_ = starting_state_;	
+	state_ = starting_state;	
 }
