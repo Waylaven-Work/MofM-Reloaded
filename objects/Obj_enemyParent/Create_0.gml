@@ -1,6 +1,7 @@
 //Inherit from lifeform parent
 event_inherited();
 initialize_movement_entity(1, 0.5, Obj_solid);
+Scr_initializeHurtboxEntity();
 
 enum enemy
 {

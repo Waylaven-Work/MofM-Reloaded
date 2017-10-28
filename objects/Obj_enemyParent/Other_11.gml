@@ -8,3 +8,5 @@ if (alarm[0] <= 0)
 	state_ = enemy.move;
 	direction_ = random(360);
 }
+
+Scr_basicEnemyAttack();
